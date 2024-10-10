@@ -10,20 +10,27 @@
 
 // ----------------------------------------------------------
 // ----------------------------------------------------------
+
+// Z -> esperar -> 
+// Esta función se encarga de hacer que el programa espere un tiempo determinado
 void esperar (long tiempo) {
   delay (tiempo);
 }
 
 // ----------------------------------------------------------
 // ----------------------------------------------------------
+
+// La clase LED sirve para controlar un LED, encenderlo, apagarlo, hacerlo brillar...
 class LED {
 private:
-  int numeroLED;
-  bool encendido;
+  int numeroLED;  // número de pin del LED
+  bool encendido; // indica si el LED está encendido o no
 public:
 
   // .........................................................
   // .........................................................
+
+  // Constructor
   LED (int numero)
 	: numeroLED (numero), encendido(false)
   {
@@ -33,6 +40,9 @@ public:
 
   // .........................................................
   // .........................................................
+
+  // Encender el LED
+  // -> encender() ->
   void encender () {
 	digitalWrite(numeroLED, HIGH); 
 	encendido = true;
@@ -40,6 +50,9 @@ public:
 
   // .........................................................
   // .........................................................
+
+  // Apagar el LED
+  // -> apagar() ->
   void apagar () {
 	  digitalWrite(numeroLED, LOW);
 	  encendido = false;
@@ -47,6 +60,9 @@ public:
 
   // .........................................................
   // .........................................................
+
+  // Alternar el estado del LED
+  // -> alternar() ->
   void alternar () {
 	if (encendido) {
 	  apagar();
@@ -57,6 +73,9 @@ public:
 
   // .........................................................
   // .........................................................
+
+  // Hacer brillar el LED
+  // Z -> brillar() ->
   void brillar (long tiempo) {
 	encender ();
 	esperar(tiempo); 

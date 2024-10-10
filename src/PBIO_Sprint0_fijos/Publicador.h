@@ -9,6 +9,8 @@
 
 // --------------------------------------------------------------
 // --------------------------------------------------------------
+
+// La clase Publicador sirve para publicar valores de CO2 en la emisora BLE
 class Publicador {
 
   // ............................................................
@@ -49,6 +51,7 @@ public:
 
   // ............................................................
   // ............................................................
+  // constructor
   Publicador( ) {
 	// ATENCION: no hacerlo aquí. (*this).laEmisora.encenderEmisora();
 	// Pondremos un método para llamarlo desde el setup() más tarde
@@ -56,12 +59,16 @@ public:
 
   // ............................................................
   // ............................................................
+  // --> encenderEmisora() --> 
+  // Sirve para encender la emisora
   void encenderEmisora() {
 	(*this).laEmisora.encenderEmisora();
   } // ()
 
   // ............................................................
   // ............................................................
+  // Z, Z, Z --> publicarCO2() -->
+  // Sirve para publicar el valor de CO2 en la emisora 
   void publicarCO2( int16_t valorCO2, uint8_t contador, long tiempoEspera ) {
 
 	//

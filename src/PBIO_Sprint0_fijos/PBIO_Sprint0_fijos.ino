@@ -53,6 +53,10 @@ namespace Globales {
 
 // --------------------------------------------------------------
 // --------------------------------------------------------------
+
+/*
+  --> iniciarPlaquita() -->
+*/
 void inicializarPlaquita () {
 
   // de momento nada
@@ -62,6 +66,12 @@ void inicializarPlaquita () {
 // --------------------------------------------------------------
 // setup()
 // --------------------------------------------------------------
+
+/*
+  --> setup() -->
+  --> inicializarPlaquita()
+
+*/
 void setup() {
 
   Globales::elPuerto.esperarDisponible();
@@ -117,6 +127,12 @@ void setup() {
 
 // --------------------------------------------------------------
 // --------------------------------------------------------------
+/*
+  ->lucecitas()->
+  ¿Que hace esta función?
+  Enciende y apaga el LED de la placa cada 100 ms y lo apaga cada 400 ms
+
+*/
 inline void lucecitas() {
   using namespace Globales;
 
@@ -139,12 +155,18 @@ inline void lucecitas() {
 // --------------------------------------------------------------
 // loop ()
 // --------------------------------------------------------------
+// --------------------------------------------------------------
+// Este contador se incrementa en cada ciclo de loop
+// Se usa para medir el tiempo de ejecución (en el monitor serie)
 namespace Loop {
   uint8_t cont = 0;
 };
 
 // ..............................................................
 // ..............................................................
+/*
+  -> loop()->
+*/
 void loop () {
 
   using namespace Loop;
@@ -213,6 +235,7 @@ void loop () {
 
 
 
+  //  Sirve para mostrar el valor de CO2 en el monitor serie
 
   Serial.print("Gas: ");
   Serial.println(valorCO2);

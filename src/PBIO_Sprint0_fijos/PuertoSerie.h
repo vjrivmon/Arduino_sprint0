@@ -11,6 +11,8 @@
 
 // ----------------------------------------------------------
 // ----------------------------------------------------------
+
+// Esta clase sirve para comunicarse con el puerto serie
 class PuertoSerie  {
 
 public:
@@ -23,6 +25,7 @@ public:
 
   // .........................................................
   // .........................................................
+  // -> esperarDisponible() ->
   void esperarDisponible() {
 
 	delay(10);   
@@ -31,7 +34,9 @@ public:
 
   // .........................................................
   // .........................................................
-  template<typename T>
+  template<typename T>  // Esto es una plantilla
+
+  // T mensaje -> escribir() ->
   void escribir (T mensaje) {
 	Serial.print( mensaje );
   } // ()
