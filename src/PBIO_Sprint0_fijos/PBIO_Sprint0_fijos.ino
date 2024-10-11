@@ -5,6 +5,9 @@
 // Jordi Bataller i Mascarell
 // 2019-07-07
 //
+// Pablo Meana Gonzalez
+// 2024-10-10
+//
 // --------------------------------------------------------------
 
 // https://learn.sparkfun.com/tutorials/nrf52840-development-with-arduino-and-circuitpython

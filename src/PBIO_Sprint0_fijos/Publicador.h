@@ -2,6 +2,10 @@
 
 // --------------------------------------------------------------
 // Jordi Bataller i Mascarell
+//
+// Pablo Meana Gonzalez
+// 2024-10-10
+//
 // --------------------------------------------------------------
 
 #ifndef PUBLICADOR_H_INCLUIDO
@@ -22,9 +26,9 @@ private:
 	'-', 'P', 'R', 'O', 'Y', '-', '3', 'A'
 	};*/
 
-uint8_t beaconUUID[16] = { //UUID del Beacon // --------------------------------------------- CAMBIAR
-  'M', 'A', 'C', 'H', 'O', '-', 'L', 'E', 
-  'V', 'A', 'N', 'T', 'E', '-', 'U', 'D'
+uint8_t beaconUUID[16] = { //UUID del Beacon // --------------------------------------------- ESTE ES EL NOMBRE QUE TE PIDE QUE MUESTRE EN LA WEB
+  'M', 'A', 'T', 'X', 'O', '-', 'L', 'L', 
+  'E', 'V', 'A', 'N', 'T',  '-', 'U', 'D'
   };
   
 

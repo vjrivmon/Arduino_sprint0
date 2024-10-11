@@ -1,3 +1,9 @@
+// ----------------------------------------------------------
+// Pablo Meana Gonzalez
+// 2024-10-10
+//
+// ----------------------------------------------------------
+
 // -*- mode: c++ -*-
 
 #ifndef MEDIDOR_H_INCLUIDO
@@ -27,7 +33,7 @@ class Medidor {
   
   // -> medirCO2() -> Z
   float medirCO2() {
-    return 1909;  // ----------------- CAMBIAR ESTE NÚMERO POR OTRO CUALQUIERA
+    return 1909;  // -----------------  ESTE NÚMERO ES EL QUE TE PIDEN QUE MUESTRE FIJO
   } // ()
 
   // .....................................................
